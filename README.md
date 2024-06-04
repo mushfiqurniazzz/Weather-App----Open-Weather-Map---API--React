@@ -1,4 +1,8 @@
 <h1>Simple Weather App</h1>
+
+https://github.com/mushfiqurniazzz/Weather-App----Open-Weather-Map---API--React/assets/148959859/e5dfb5ef-868d-4baa-8938-010771d71c15
+
+
 <p>This app allows users to know the weather of any city in the world. It uses the APIs from Open Weather Map, React.js for building the user interface. The app provides a seamless experience for knowing the weather of any place.</p>
 <h3>Running the Project Locally</h3>
   <p>To run this project on your local machine, follow these steps:
