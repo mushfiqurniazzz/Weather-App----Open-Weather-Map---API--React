@@ -18,11 +18,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-hr {
+.hr {
   width: 30rem;
   color: white;
 }
-input {
+.input {
   height: 1.5rem;
   width: 15rem;
   border-radius: 7px;
@@ -30,7 +30,7 @@ input {
   background-color: rgb(255, 166, 0);
   font-weight: bold;
 }
-button {
+.button {
   height: 1.9rem;
   width: 4rem;
   font-weight: bold;
@@ -41,13 +41,13 @@ button {
   margin-left: 2rem;
   margin-top: 1.2rem;
 }
-button:hover {
+.button:hover {
   background-color: rgb(255, 136, 0);
 }
-h2 {
+.h2 {
   margin-top: 2rem;
 }
-p {
+.p {
   margin: 2rem;
   font-weight: bold;
 }

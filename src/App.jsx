@@ -1,4 +1,4 @@
-import "./components/styles/App.css"; //importing css for design,
+import styles from "./components/styles/App.module.css"; //importing css for design,
 import { useState } from "react"; //importing useState for state variables,
 import axios from "axios"; // importing axios for http reqs,
 import { Toaster, toast } from "sonner"; //importing sonner for toast notifications
@@ -37,22 +37,31 @@ function App() {
   return (
     <>
       <Toaster duration={2000} position="top-center" richColors closeButton />
-      <div className="App">
-        <h1>Weather App - Open Weather Map - API, React</h1>
-        <hr />
+      <div className={styles.App}>
+        <h1 className={styles.h1}>
+          Weather App - Open Weather Map - API, React
+        </h1>
+        <hr className={styles.hr} />
         <input
+          className={styles.input}
           type="text"
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name"
         />
-        <button onClick={handleSearch}>Search</button>
+        <button className={styles.button} onClick={handleSearch}>
+          Search
+        </button>
         {/* conditional rendering, if weather is not null set the weather.name recieved from the api, formula for converting F to C, set the description as the description of the first row recieved from the api */}
         {weather && (
           <div>
-            <h2>Weather in {weather.name}</h2>
-            <p>Temperature: {Math.round(weather.main.temp - 273.15)}°C</p>
-            <p>Weather: {weather.weather[0].description}</p>
+            <h2 className={styles.h2}>Weather in {weather.name}</h2>
+            <p className={styles.p}>
+              Temperature: {Math.round(weather.main.temp - 273.15)}°C
+            </p>
+            <p className={styles.p}>
+              Weather: {weather.weather[0].description}
+            </p>
           </div>
         )}
       </div>
